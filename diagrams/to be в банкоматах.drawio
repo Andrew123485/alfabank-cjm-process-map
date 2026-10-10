@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram name="TO BE банкоматы" id="atm-to-be">
+    <mxGraphModel dx="1112" dy="521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5800" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" parent="1" style="swimlane;html=1;horizontal=1;startSize=40;collapsible=0;fontStyle=1;fontSize=14;fillColor=#E6E6E6;" value="Снятие валюты и внесение без карты в банкомате (TO BE)" vertex="1">
+          <mxGeometry height="2090" width="5600" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=none;" value="Клиент Альфа-Банка" vertex="1">
+          <mxGeometry height="250" width="5600" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="n3" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#7F00FF;align=center;verticalAlign=middle;whiteSpace=wrap;" value="ФАЗА 1: Выбор канала" vertex="1">
+          <mxGeometry height="28" width="300" x="130" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="n3" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#7F00FF;align=center;verticalAlign=middle;whiteSpace=wrap;" value="ФАЗЫ 2–3: Подготовка на сайте и в Мобайле" vertex="1">
+          <mxGeometry height="28" width="700" x="620" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" parent="n3" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#7F00FF;align=center;verticalAlign=middle;whiteSpace=wrap;" value="ФАЗА 4: Операция в банкомате (снять / внести без карты)" vertex="1">
+          <mxGeometry height="28" width="420" x="1850" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="n3" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#7F00FF;align=center;verticalAlign=middle;whiteSpace=wrap;" value="ФАЗА 5: Списание и чек" vertex="1">
+          <mxGeometry height="28" width="320" x="4800.0" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="n3" style="shape=ellipse;html=1;dashed=0;whiteSpace=wrap;aspect=fixed;perimeter=ellipsePerimeter;fillColor=#d5e8d4;strokeColor=#82b366;sketch=0;shadow=0;fontSize=9;" value="начало" vertex="1">
+          <mxGeometry height="40" width="40" x="70" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="n3" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="1.1 Клиент выбирает,&#10;где снять наличную валюту" vertex="1">
+          <mxGeometry height="90" width="200" x="160" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" parent="n3" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="440" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" parent="n3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Какой канал?" vertex="1">
+          <mxGeometry height="28" width="110" x="415" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" parent="n3" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="1700" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" parent="n3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Все каналы сходятся" vertex="1">
+          <mxGeometry height="28" width="170" x="1640" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="n3" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;fillColor=#f8cecc;strokeColor=#b85450;sketch=0;shadow=0;" value="Окончание процесса" vertex="1">
+          <mxGeometry height="40" width="40" x="5350.0" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Сайт alfabank.ru — вкладка «В банкоматах»" vertex="1">
+          <mxGeometry height="290" width="5600" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" parent="n4" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="2.1 Клиент открывает страницу курсов,&#10;вкладка «В банкоматах»" vertex="1">
+          <mxGeometry height="90" width="200" x="620" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" parent="n4" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N1: Кассовой формы «Забронировать сумму для обмена в отделении» на вкладке нет" vertex="1">
+          <mxGeometry height="50" width="200" x="620" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" parent="n4" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="2.2 Клиент смотрит курсы: доллары, евро,&#10;юани и дирхамы. «Продать» — прочерк" vertex="1">
+          <mxGeometry height="90" width="200" x="870" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" parent="n4" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N2: В таблице — валюты выдачи банкоматов. Инфоблок номиналов: юани и дирхамы купюрами." vertex="1">
+          <mxGeometry height="50" width="200" x="870" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" parent="n4" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="2.3 Клиент считает сумму&#10;в калькуляторе,&#10;выбирает тип карты" vertex="1">
+          <mxGeometry height="90" width="200" x="1120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" parent="n4" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N3: Калькулятор: один курс и сколько получит. Юани и дирхамы по справочнику валют выдачи" vertex="1">
+          <mxGeometry height="50" width="200" x="1120" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Карта банкоматов на сайте" vertex="1">
+          <mxGeometry height="230" width="5600" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="n26" parent="n5" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="2.4 Клиент открывает «Найти на карте»,&#10;включает фильтр выдачи:&#10;доллары, евро, юани, дирхамы" vertex="1">
+          <mxGeometry height="90" width="200" x="620" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" parent="n5" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N4: В выборку только банкомат, где эта валюта включена. Партнёрские в фильтр не входят. Фильтр «только новые» доллары делается" vertex="1">
+          <mxGeometry height="50" width="200" x="620" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" parent="n5" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="2.5 Клиент открывает карточку банкомата&#10;и смотрит наличие валюты" vertex="1">
+          <mxGeometry height="90" width="200" x="870" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n29" parent="n5" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N5: При английской версии карта, фильтры и карточка банкомата на английском" vertex="1">
+          <mxGeometry height="45" width="200" x="870" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" value="Альфа-Мобайл" vertex="1">
+          <mxGeometry height="270" width="5600" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="n30" parent="n6" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="3.1 Клиент ищет «банкоматы»&#10;и открывает экран&#10;«Банкоматы и отделения»" vertex="1">
+          <mxGeometry height="90" width="200" x="620" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" parent="n6" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="3.2 Клиент открывает «Фильтры» → «Выдают»:&#10;рубли, доллары, евро, юани, дирхамы" vertex="1">
+          <mxGeometry height="90" width="200" x="870" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n32" parent="n6" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N6: Фильтр совпадает с валютой, которую банкомат выдаёт. Партнёрские не в фильтре. Фильтр «только новые» доллары делается" vertex="1">
+          <mxGeometry height="50" width="200" x="870" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n33" parent="n6" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="3.3 Клиент выбирает банкомат&#10;и строит маршрут" vertex="1">
+          <mxGeometry height="90" width="200" x="1120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n34" parent="n6" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N7: При английской версии карта, фильтры и карточка банкомата на английском" vertex="1">
+          <mxGeometry height="45" width="200" x="1120" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=#FFE6CC;strokeColor=#D79B00;" value="Банкомат" vertex="1">
+          <mxGeometry height="760" width="5600" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="n35" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.1 Клиент выбирает язык:&#10;русский, английский или китайский" vertex="1">
+          <mxGeometry height="90" width="200" x="1850" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n36" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N8: Русский на экране и чеке обязателен. EN/CH дублируют, не заменяют. Выбор до операции, в том числе до «Продолжить без карты»" vertex="1">
+          <mxGeometry height="50" width="200" x="1850" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="n37" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.2 Клиент прикладывает карту&#10;и авторизуется" vertex="1">
+          <mxGeometry height="90" width="200" x="2350.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n38" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.3 Клиент выбирает вкладку «Снять»&#10;(на экране также «Внести»&#10;и «Другое») и счёт списания" vertex="1">
+          <mxGeometry height="90" width="200" x="2600.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n39" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.4 Клиент выбирает валюту:&#10;рубли, доллары, евро,&#10;юани, дирхамы" vertex="1">
+          <mxGeometry height="90" width="200" x="2850.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n40" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N9: Юани и дирхамы на переключателе, если выдача этой валюты в банкомате включена" vertex="1">
+          <mxGeometry height="45" width="200" x="2850.0" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="n41" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="3120.0" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n42" parent="n7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Какая валюта?" vertex="1">
+          <mxGeometry height="28" width="150" x="3070.0" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n43" parent="n7" style="shape=mxgraph.bpmn.event;html=1;perimeter=ellipsePerimeter;aspect=fixed;outline=end;symbol=terminate;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#F8CECC;strokeColor=#B85450;fontSize=8;" value="Снятие рублей:&#10;конверсии нет" vertex="1">
+          <mxGeometry height="40" width="40" x="3125.0" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n44" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="3330.0" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n45" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.5 Клиент вводит сумму:&#10;от 100 до 9 000 $&#10;или от 100 до 18 600 €.&#10;Может нажать «Выбрать купюры»" vertex="1">
+          <mxGeometry height="90" width="200" x="3440.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n46" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.6 Клиент читает на экране ввода:&#10;один курс и сколько получит;&#10;при долларах — образец купюр" vertex="1">
+          <mxGeometry height="90" width="200" x="3690.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n47" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N10: Один курс и сколько получит на устройстве. QR и ссылка на вкладку «В банкоматах» — курсы обмена в банкоматах" vertex="1">
+          <mxGeometry height="50" width="200" x="3690.0" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="n48" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="3960.0" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n49" parent="n7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Продолжает?" vertex="1">
+          <mxGeometry height="28" width="160" x="3905.0" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n50" parent="n7" style="shape=mxgraph.bpmn.event;html=1;perimeter=ellipsePerimeter;aspect=fixed;outline=end;symbol=terminate;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#F8CECC;strokeColor=#B85450;fontSize=8;" value="Отказ&#10;от операции" vertex="1">
+          <mxGeometry height="40" width="40" x="3965.0" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="n51" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.7 Клиент проверяет экран&#10;«Проверьте, всё ли верно»:&#10;один курс, сколько получит, счёт" vertex="1">
+          <mxGeometry height="90" width="200" x="4090.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n52" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N11: Те же цифры, что на вводе. Один курс и сколько получит" vertex="1">
+          <mxGeometry height="50" width="200" x="4090.0" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="n53" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="4360.0" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n54" parent="n7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Подтверждает?" vertex="1">
+          <mxGeometry height="28" width="170" x="4300.0" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="n55" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.8 Клиент забирает купюры&#10;по 100 и чек" vertex="1">
+          <mxGeometry height="90" width="200" x="4590.0" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="n2" style="swimlane;html=1;startSize=30;horizontal=0;collapsible=0;fontStyle=1;fontSize=11;fillColor=#F5F5F5;strokeColor=#666666;" value="Процессинг и чек" vertex="1">
+          <mxGeometry height="250" width="5600" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="n57" parent="n8" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="5.1 Списание с рублёвого счёта&#10;по курсу банка" vertex="1">
+          <mxGeometry height="90" width="200" x="4870.0" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n58" parent="n8" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="5.2 Курс и сумма к получению&#10;отражаются в чеке и в приложении" vertex="1">
+          <mxGeometry height="90" width="200" x="5120.0" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n59" parent="n8" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N13: Цифры в чеке и в приложении совпадают с экраном. Русский на чеке обязателен; EN/CH дублируют" vertex="1">
+          <mxGeometry height="45" width="200" x="5120.0" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n63" edge="1" parent="n2" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n30" value="Б: Мобайл">
+          <mxGeometry relative="1" x="-0.6413" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="452" y="895" />
+            </Array>
+            <mxPoint x="390" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n62" edge="1" parent="n2" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n20" value="А: Сайт">
+          <mxGeometry relative="1" x="0.2836" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="478" y="375" />
+            </Array>
+            <mxPoint x="490" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n69" edge="1" parent="n2" source="n28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="n17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1710" y="665" />
+            </Array>
+            <mxPoint x="1680" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n72" edge="1" parent="n2" source="n33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="n17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="895" />
+            </Array>
+            <mxPoint x="1740" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n90" edge="1" parent="n2" source="n58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=0;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n19" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5370" y="1925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n60" edge="1" parent="1" source="n13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n61" edge="1" parent="1" source="n14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n64" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n17" value="В: Сразу к банкомату">
+          <mxGeometry relative="1" x="-0.7686" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n65" edge="1" parent="1" source="n20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n66" edge="1" parent="1" source="n22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n67" edge="1" parent="1" source="n24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n26" value="«Найти на карте»">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="375" />
+              <mxPoint x="1360" y="530" />
+              <mxPoint x="720" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n68" edge="1" parent="1" source="n26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n70" edge="1" parent="1" source="n30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n71" edge="1" parent="1" source="n31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n73" edge="1" parent="1" source="n17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=0;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n35" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="170" />
+              <mxPoint x="1800" y="1185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n74" edge="1" parent="1" source="n35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n100" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n75" edge="1" parent="1" source="n37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n76" edge="1" parent="1" source="n38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n77" edge="1" parent="1" source="n39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n78" edge="1" parent="1" source="n41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontColor=#B85450;fontStyle=1;fontSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n43" value="Рубли">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n79" edge="1" parent="1" source="n41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n44" value="USD / EUR / CNY / AED">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n80" edge="1" parent="1" source="n44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n81" edge="1" parent="1" source="n45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n82" edge="1" parent="1" source="n46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n83" edge="1" parent="1" source="n48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontColor=#B85450;fontStyle=1;fontSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n50" value="Выйти">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n84" edge="1" parent="1" source="n48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontColor=#82B366;fontStyle=1;fontSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n51" value="Далее">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n85" edge="1" parent="1" source="n51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n86" edge="1" parent="1" source="n53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n44" value="Назад">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4385.0" y="1420" />
+              <mxPoint x="3355.0" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n87" edge="1" parent="1" source="n53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontColor=#82B366;fontStyle=1;fontSize=8;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n55" value="Получить наличные">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n88" edge="1" parent="1" source="n55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n57" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4830.0" y="1185" />
+              <mxPoint x="4830.0" y="1925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n89" edge="1" parent="1" source="n57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n100" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry x="2100" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n101" parent="n7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Как войти?" vertex="1">
+          <mxGeometry x="2040" y="25" width="160" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n120" parent="1" source="n100" target="n37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="С картой" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n118" parent="n7" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#7F00FF;align=left;verticalAlign=middle;whiteSpace=wrap;" value="Внести без карты — существующее «Внести» (клиент Банка, не G_94)" vertex="1">
+          <mxGeometry x="80" y="350" width="700" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n102" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.9 Клиент нажимает&#10;«Продолжить без карты»" vertex="1">
+          <mxGeometry x="2025" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n103" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.10 Клиент открывает вкладку «Внести»" vertex="1">
+          <mxGeometry x="2350" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n104" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry x="2620" y="420" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n105" parent="n7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Как внести?" vertex="1">
+          <mxGeometry x="2570" y="375" width="140" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n106" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.11 Клиент вносит&#10;по номеру счёта" vertex="1">
+          <mxGeometry x="2770" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n107" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N14: Инструкция и/или QR — где взять полный номер счёта. URL Мобайла не выдумывать" vertex="1">
+          <mxGeometry x="2770" y="495" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n108" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.12 Клиент вносит&#10;по номеру телефона" vertex="1">
+          <mxGeometry x="2770" y="620" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n109" parent="n7" style="shape=mxgraph.bpmn.gateway2;html=1;perimeter=rhombusPerimeter;outline=none;symbol=none;gwType=exclusive;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=9;" value="" vertex="1">
+          <mxGeometry x="3070" y="420" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n110" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.13 Клиент вводит проверочный код" vertex="1">
+          <mxGeometry x="3220" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n111" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N15: Инструкция: код по кнопке «Получить код в смс» на номер, привязанный к счёту" vertex="1">
+          <mxGeometry x="3220" y="495" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n112" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.14 Клиент выбирает валюту внесения&#10;и счёт зачисления" vertex="1">
+          <mxGeometry x="3470" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n113" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N16: Сейчас рубли. Дальше — другие валюты на валютный счёт. Один курс и сколько зачислят. Наличной валюты на счёт нет" vertex="1">
+          <mxGeometry x="3470" y="495" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n114" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.15 Клиент вставляет купюры пачкой" vertex="1">
+          <mxGeometry x="3720" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n115" parent="n7" style="shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=abstract;fontSize=8;fillColor=#FFFFFF;strokeColor=#000000;" value="4.16 Клиент забирает чек" vertex="1">
+          <mxGeometry x="3970" y="400" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n116" parent="n7" style="text;html=1;fontSize=7;fontColor=#82B366;align=left;verticalAlign=top;whiteSpace=wrap;fontStyle=2;" value="🟢 N17: Русский на чеке обязателен. EN/CH дублируют, не заменяют" vertex="1">
+          <mxGeometry x="3970" y="495" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n117" parent="n7" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;fillColor=#f8cecc;strokeColor=#b85450;sketch=0;shadow=0;" value="Окончание процесса" vertex="1">
+          <mxGeometry x="4270" y="425" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n121" parent="1" source="n100" target="n102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=0;" value="Без карты" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="n122" parent="1" source="n102" target="n103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n123" parent="1" source="n103" target="n104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n124" parent="1" source="n104" target="n106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=0;" value="По номеру счёта" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n125" parent="1" source="n104" target="n108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=blockThin;endFill=1;fontSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=0;" value="По номеру телефона" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="2645" y="1745" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="n126" parent="1" source="n106" target="n109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n127" parent="1" source="n108" target="n109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="3095" y="1745" /></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="n128" parent="1" source="n109" target="n110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n129" parent="1" source="n110" target="n112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n130" parent="1" source="n112" target="n114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n131" parent="1" source="n114" target="n115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n132" parent="1" source="n115" target="n117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

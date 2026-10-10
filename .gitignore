@@ -1,0 +1,15 @@
+# Secrets
+.env
+*.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Backup files
+*.bkp
+*.drawio.bkp
