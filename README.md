@@ -59,7 +59,20 @@
   5. *Продуктовые гипотезы и решения (Feature Ideas)*.
 
 ### 2.2. Процессы AS-IS и TO-BE в BPMN 2.0 (Банкоматы и Кассы)
-В папке `diagrams/` представлены векторные схемы в формате `.drawio`:
+
+<div align="center">
+
+| BPMN 2.0: Процесс в банкоматах AS-IS | BPMN 2.0: Оптимизированный процесс TO-BE |
+|:---:|:---:|
+| <img src="diagrams/bpmn_asis_atm.png" alt="AS-IS ATM Process" width="460"/> | <img src="diagrams/bpmn_tobe_atm.png" alt="TO-BE ATM Process" width="460"/> |
+
+| Алгоритм тарификации курсов валют (TO-BE RatesByRanges) | Модель расчета маржинальности (TO-BE PL by Markup) |
+|:---:|:---:|
+| <img src="diagrams/bpmn_tobe_rates_ranges.png" alt="RatesByRanges" width="460"/> | <img src="diagrams/bpmn_tobe_plbymarkup.png" alt="PL by Markup" width="460"/> |
+
+</div>
+
+В папке `diagrams/` представлены как готовые визуальные схемы, так и векторные исходники в формате `.drawio`:
 * `asis в банкоматах.drawio` vs `to be в банкоматах.drawio` — устранение лишних экранов подтверждения, оптимизация времени выдачи наличных.
 * `asis в кассах.drawio` vs `to be в кассах.drawio` — интеграция электронной очереди и автоматизация валютного курса без участия оператора.
 

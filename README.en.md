@@ -59,7 +59,20 @@ The `build_full_cjm_final.py` client reads `full_cjm_data.json` and programmatic
   5. *Actionable Product Solutions & Feature Hypotheses*.
 
 ### 2.2. BPMN 2.0 AS-IS & TO-BE Workflows (ATMs & Teller Desks)
-Vector diagram files stored in `diagrams/`:
+
+<div align="center">
+
+| BPMN 2.0: ATM Workflow AS-IS | BPMN 2.0: Optimized Workflow TO-BE |
+|:---:|:---:|
+| <img src="diagrams/bpmn_asis_atm.png" alt="AS-IS ATM Process" width="460"/> | <img src="diagrams/bpmn_tobe_atm.png" alt="TO-BE ATM Process" width="460"/> |
+
+| FX Rate Tiering Architecture (TO-BE RatesByRanges) | Profitability Model (TO-BE PL by Markup) |
+|:---:|:---:|
+| <img src="diagrams/bpmn_tobe_rates_ranges.png" alt="RatesByRanges" width="460"/> | <img src="diagrams/bpmn_tobe_plbymarkup.png" alt="PL by Markup" width="460"/> |
+
+</div>
+
+Diagram artifacts stored in `diagrams/` include both pre-rendered visuals and editable `.drawio` XML sources:
 * `asis в банкоматах.drawio` vs `to be в банкоматах.drawio` — eliminates redundant confirmation dialogs, minimizes cash dispensing cycle latency.
 * `asis в кассах.drawio` vs `to be в кассах.drawio` — integrates digital queue routing and automated FX exchange rates without manual operator overhead.
 
